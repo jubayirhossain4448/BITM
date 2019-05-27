@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Currency Conveter"
+       android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Amount"/>
+
+    <RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/dToTaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doller To Taka"/>
+
+    <RadioButton
+        android:id="@+id/takaToD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taka To Doller"/>
+</RadioGroup>
+
+<Button
+    android:id="@+id/conBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Convert"/>
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"/>
+
+
+</LinearLayout>

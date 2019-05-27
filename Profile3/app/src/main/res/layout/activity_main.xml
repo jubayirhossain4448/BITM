@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/AmountEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Courency"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/Rbttod"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Taka To Dolar."
+            android:checked="true"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:id="@+id/Rbdtot"
+            android:layout_weight="0.54"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Dolar To Taka."
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Convater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Convert"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Tv"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0.00"
+
+        android:visibility="visible" />
+
+</LinearLayout>
