@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="4"
     android:padding="10dp"
+    android:weightSum="4"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -18,16 +18,16 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Red"
             android:layout_weight="0.5"
-            android:background="@color/Red"/>
+            android:background="@color/Red"
+            android:text="Red" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Green"
             android:layout_weight="0.5"
-            android:background="@color/Green"/>
+            android:background="@color/Green"
+            android:text="Green" />
 
     </LinearLayout>
 
@@ -40,16 +40,16 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Blue"
             android:layout_weight="0.5"
-            android:background="@color/Blue"/>
+            android:background="@color/Blue"
+            android:text="Blue" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Yellow"
             android:layout_weight="0.5"
-            android:background="@color/Yellow"/>
+            android:background="@color/Yellow"
+            android:text="Yellow" />
 
     </LinearLayout>
 
@@ -62,16 +62,16 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Orange"
             android:layout_weight="0.5"
-            android:background="@color/Orange"/>
+            android:background="@color/Orange"
+            android:text="Orange" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Black"
             android:layout_weight="0.5"
-            android:background="@color/Black"/>
+            android:background="@color/Black"
+            android:text="Black" />
 
     </LinearLayout>
 
@@ -84,25 +84,26 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="1"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:text="1" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="2"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:text="2" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="3"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:text="3" />
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="4"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:text="4" />
 
     </LinearLayout>
 
