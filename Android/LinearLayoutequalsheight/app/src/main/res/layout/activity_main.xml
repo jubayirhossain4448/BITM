@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Linear Layout Equals Heigh"
+        android:textAllCaps="true"
         android:gravity="center"/>
 
     <LinearLayout
@@ -24,7 +25,7 @@
             android:layout_weight="1"
             android:text="BANGLADESH"
             android:gravity="center"
-            android:textSize="60dp"
+            android:textSize="55dp"
             android:background="@color/colorAccent"/>
 
         <TextView
@@ -44,6 +45,15 @@
             android:gravity="center"
             android:textSize="65dp"
             android:background="@color/Yellow"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:gravity="center"
+            android:textSize="65dp"/>
 
     </LinearLayout>
 
