@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Text View</string>
+    <string name="name_text">Md. Jubayir Hossain</string>
+    <string name="age_text">Age 28 years old</string>
+</resources>
