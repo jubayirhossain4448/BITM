@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Md. Jubayir Hossain"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:textIsSelectable="true"/>
+
+    <TextView
+        android:id="@+id/AGETxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:textIsSelectable="true"/>
+
+</LinearLayout>
