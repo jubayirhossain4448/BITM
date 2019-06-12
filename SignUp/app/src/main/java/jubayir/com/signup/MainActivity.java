@@ -42,8 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
         termsAndCondition.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (){
+            public void onCheckedChanged(CompoundButton compoundButton, boolean check) {
+                if (check == true){
+                    
 
                 }
             }

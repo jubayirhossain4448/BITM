@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Intent"
+         android:textSize="20sp"
+         android:textStyle="bold"
+         android:gravity="center"
+         android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/phonenoET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone No."
+        android:textSize="16sp"
+
+        />
+    <Button
+        android:id="@+id/callBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_margin="6dp"/>
+
+</LinearLayout>
