@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int count = 0;
     private Button loginBtn;
     private TextView textView;
 
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText("Login button is clicked");
+                count++;
+                textView.setText("Login button is clicked " + count + "times");
             }
         });
     }
