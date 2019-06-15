@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,9 +34,25 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public boolean onCreateOnptionMenu(Menu menu){
+
+    public boolean onCreateOnptionMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.options, menu); // options here for xml resourse name
         return true;
     }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.one:
+                Toast.makeText(this, "One", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.two:
+                Toast.makeText(this, "Two", Toast.LENGTH_SHORT).show();
+
+            default:
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
