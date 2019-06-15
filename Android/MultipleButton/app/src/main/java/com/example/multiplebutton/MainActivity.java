@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button loginBtn;
+    private Button loginBtn, logoutBtn;
     private TextView textView;
 
     @Override
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loginBtn = findViewById(R.id.loginBtn);
+        logoutBtn = findViewById(R.id.logoutBtn);
         textView = findViewById(R.id.txtV);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -24,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 textView.setText("Login button is Clicked! ");
+            }
+        });
+
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setText("Logout button is Clicked! ");
             }
         });
     }
