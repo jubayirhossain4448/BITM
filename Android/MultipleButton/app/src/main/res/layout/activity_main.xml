@@ -9,28 +9,38 @@
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_margin="10dp"
-        android:shadowColor="@android:color/holo_red_dark"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_name"
-        android:drawableLeft="@drawable/log"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="@android:color/holo_green_light"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/logout_name"/>
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/log"
+            android:shadowColor="@android:color/holo_red_dark"
+            android:text="@string/button_name"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/log"
+            android:text="@string/logout_name" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txtV"
-        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"/>
+        android:layout_margin="10dp"
+        android:textSize="20dp" />
 
 </LinearLayout>
