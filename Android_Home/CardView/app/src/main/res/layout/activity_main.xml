@@ -73,4 +73,18 @@
         android:layout_margin="4dp"
         android:background="@drawable/custom_button"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oval"
+        android:layout_margin="4dp"
+        android:background="@drawable/custom_button1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ring"
+        android:layout_margin="4dp"
+        android:background="@drawable/custom_button2"/>
+
 </LinearLayout>

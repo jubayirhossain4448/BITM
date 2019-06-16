@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring">
+
+    <corners
+        android:radius="10dp"/>
+
+    <solid
+        android:color="#CC06EE"/>
+
+    <gradient
+        android:startColor="@color/colorPrimary"
+        android:endColor="@color/cardview_shadow_end_color"/>
+
+
+</shape>
