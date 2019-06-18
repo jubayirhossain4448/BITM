@@ -19,4 +19,26 @@ public class Person {                // Pascale case(First letter of every word 
         this.mobileNumber = mobileNumber;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+    
+    
+
 }
