@@ -11,6 +11,7 @@ public class Student {
     }
 
     public Student(String id, String name, String roll, String fathersName, String mothersName) {
+        this();
         this.id = id;
         this.name = name;
         this.roll = roll;
