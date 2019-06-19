@@ -9,15 +9,15 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Student> studentList;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {  // Main Method
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        studentList = new ArrayList<>();
+        studentList = new ArrayList<>();                  // Object of studentList
         
-        getData();
+        getData();                                        // User define method
     }
 
-    private void getData() {
+    private void getData() {                              // auto created method
     }
 }
