@@ -1,4 +1,4 @@
-package morshed.com.recyclerview;
+package morshed.com.recyleerview;
 
 public class Student {
     private String id;
@@ -8,9 +8,10 @@ public class Student {
     private String dept;
 
     public Student() {
+
     }
 
-    public Student(String id, String name, String email, String mobileNumber,String dept) {
+    public Student(String id, String name, String email, String mobileNumber, String dept) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -33,6 +34,7 @@ public class Student {
     public String getMobileNumber() {
         return mobileNumber;
     }
+
     public String getDept() {
         return dept;
     }
