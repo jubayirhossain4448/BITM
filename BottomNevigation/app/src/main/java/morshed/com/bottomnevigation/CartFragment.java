@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CartFragment extends Fragment {
+public class CartFragment extends android.support.v4.app.Fragment {
 
 
     public CartFragment() {

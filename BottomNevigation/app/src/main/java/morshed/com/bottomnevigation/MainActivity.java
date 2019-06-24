@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new HomeFragment());
                     return true;
                 case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                    replaceFragment(new CartFragment());
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                    replaceFragment(new ProfileFragment());
                     return true;
             }
             return false;
