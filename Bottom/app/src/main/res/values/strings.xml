@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_cart">Card</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_home_fragment">Hello Its Home fragment</string>
+    <string name="hello_cart_fragment">Hello Its Cart fragment</string>
+    <string name="hello_profile_fragment">Hello Its Profile fragment</string>
+
+</resources>
