@@ -42,9 +42,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView name, phoneNo;
         public ViewHolder(@NonNull View itemView) {
+            super(itemView);
             name = itemView.findViewById(R.id.nameTV);
             phoneNo = itemView.findViewById(R.id.phoneNoTV);
-            super(itemView);
         }
     }
 }
