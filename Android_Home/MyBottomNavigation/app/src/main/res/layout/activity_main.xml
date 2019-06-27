@@ -8,9 +8,11 @@
     tools:context=".MainActivity">
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_view">
+
     </FrameLayout>
 
 
@@ -20,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/windowBackground"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"/>  // menu gulo show korar jonno
 
 </RelativeLayout>
