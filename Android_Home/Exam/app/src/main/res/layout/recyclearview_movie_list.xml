@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie_List"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/shirt"/>
+
+        <TextView
+            android:id="@+id/movieNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie_Name"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/directorNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Director_Name"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
