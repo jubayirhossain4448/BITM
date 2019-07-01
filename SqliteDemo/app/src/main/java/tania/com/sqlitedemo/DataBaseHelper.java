@@ -1,5 +1,6 @@
 package tania.com.sqlitedemo;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -10,7 +11,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, VERSION);
     }
 
-    private static String DATABASE_NAME = "User.db";
+    private static String DATABASE_NAME = "User.db";  // database er name create korte hobe
     private static String TABLE_NAME = "User";
     private static String COL_ID = "Id";
     private static String COL_NAME = "Name";
@@ -28,5 +29,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+    }
+
+    public long insertData(String name, String age){
+
+        ContentValues values = new ContentValues();
+        values.put(COL_NAME, name);
+        values.put(COL_AGE, age);
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        long id = sqLiteDatabase.insert(TABLE_NAME, null, values);
+        sqLiteDatabase.close();
+        return id;
     }
 }
