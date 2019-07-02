@@ -11,13 +11,13 @@
     android:id="@+id/nameET"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Name"/>
+    android:hint="Name"/>
 
     <EditText
         android:id="@+id/ageET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Age"/>
+        android:hint="Age"/>
 
     <Button
         android:id="@+id/insertBTN"
