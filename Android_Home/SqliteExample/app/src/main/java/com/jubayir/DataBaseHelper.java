@@ -1,6 +1,7 @@
 package com.jubayir;
 
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -29,5 +30,16 @@ public class DataBaseHelper extends SQLiteOpenHelper { // database er name, fiel
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
+    }
+
+    public long insertData(String name, String age){
+        ContentValues values = new ContentValues();
+        values.put(COL_NAME, name);
+        values.put(COL_AGE, age);
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        long id = sqLiteDatabase.insert(TABLE_NAME, null,values);
+        sqLiteDatabase.close();
+
+        return id;
     }
 }
