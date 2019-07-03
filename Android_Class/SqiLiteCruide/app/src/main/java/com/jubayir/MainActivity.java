@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         init();
         initRecyclearView();
 
-        setData();
 
         insertBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,10 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
-
-    private void setData() {
-        
     }
 
     private void initRecyclearView() {
