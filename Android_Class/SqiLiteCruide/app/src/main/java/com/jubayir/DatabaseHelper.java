@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static String CREATE = "Create table " + TABLE_NAME + " (Id INTEGER PRIMARY KEY, NAME TEXT, AGE TEXT)"; // Table make korar jonno query likte hobe
     public static int VERSION = 1;
 
-    public DatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, VERSION);
     }
 
@@ -48,5 +48,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery(show_all, null); // row Query hosse sob gulo data eksate anar jonno use kora hoi. Specific data ante hole SQlQuery use korte hoi
         return cursor;
+    }
+
+    public void deleteData(int id){
+        getWritableDatabase().delete(TABLE_NAME, "ID=?", new String[] {String.valueOf(id)});
+
     }
 }

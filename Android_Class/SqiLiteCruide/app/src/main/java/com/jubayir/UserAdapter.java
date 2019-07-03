@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
+    private DatabaseHelper helper;
 
     private Context context;
     private List<User> users;
@@ -32,11 +33,22 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        User user = users.get(position);
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+        final User user = users.get(position);
 
         holder.name.setText(user.getName());
         holder.age.setText(user.getAge());
+
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                helper = new DatabaseHelper(context);
+                helper.deleteData(user.getId());
+                users.remove(position);
+                notifyDataSetChanged();
+                return false;
+            }
+        });
 
     }
 
