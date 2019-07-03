@@ -1,12 +1,18 @@
 package com.jubayir;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     private String aName, aAge;
     private Button insertBTN, showDetailsBTN;
     private DatabaseHelper databaseHelper;
+    private UserAdapter adapter;
+    private RecyclerView recyclerView;
+
+    private List<User> userList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
+        initRecyclearView();
+
+        setData();
 
         insertBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,13 +46,31 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        showDetailsBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+    }
+
+    private void setData() {
+        
+    }
+
+    private void initRecyclearView() {
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
     }
 
     private void init() {
+        userList = new ArrayList<>();
 
         nameET = findViewById(R.id.nameET);
         ageET = findViewById(R.id.ageET);
         insertBTN = findViewById(R.id.insertBTN);
-        showDetailsBTN =findViewById(R.id.showDetailsBTN);
+        showDetailsBTN = findViewById(R.id.showDetailsBTN);
     }
 }
