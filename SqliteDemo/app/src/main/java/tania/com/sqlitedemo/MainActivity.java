@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText nameEt, age;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 aName = nameEt.getText().toString();
                 aAge = age.getText().toString();
                 dataBaseHelper.insertData(aName, aAge);
+//                Toast.makeText(MainActivity.this, "")
             }
         });
     }
