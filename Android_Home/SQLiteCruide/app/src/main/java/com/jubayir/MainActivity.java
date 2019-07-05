@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     8. insertBtn.setOnClickListner e method call korte hobe and Toast kore dekhate hobe
     9. RecyclearView Create korte hobe
     10. Pojo Class Create korte hobe
+    11. recyclearview_user_list ekta activity nite hobe
+    12. Ekta Adapter create korte hobe
     */
 
     private EditText nameET, ageET;
