@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     5. // Database and Field and Table create korte hobe.
     6. data insert er Jonno ekta class korte hobe
     7. insertData Method theke data nite hole main activity te ekta object create korte hobe
+    8. insertBtn.setOnClickListner e method call korte hobe and Toast kore dekhate hobe
+    9. RecyclearView Create korte hobe
+    10. Pojo Class Create korte hobe
     */
 
     private EditText nameET, ageET;
@@ -40,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 name = nameET.getText().toString();
                 age = ageET.getText().toString();
                 long id = helper.insertData(name, age); // Method calling here
-                Toast.makeText(MainActivity.this, "" +id, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "" +id, Toast.LENGTH_SHORT).show(); // Eight
 
 // Three
             }
