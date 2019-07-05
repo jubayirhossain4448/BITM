@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.jubayir.DatabaseHelper;
 import com.jubayir.R;
 import com.jubayir.User;
 
@@ -16,6 +17,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     */
     private Context context;
     private List<User>users;
+    private DatabaseHelper databaseHelper;
 
     public UserAdapter(Context context, List<User> users) {
         this.context = context;
