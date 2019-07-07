@@ -8,14 +8,14 @@
         android:id="@+id/nameTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name"/>
+        android:text="Name :"/>
 
 
     <TextView
         android:id="@+id/ageTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Age"/>
+        android:text="Age :"/>
 
     <View
         android:layout_width="match_parent"
