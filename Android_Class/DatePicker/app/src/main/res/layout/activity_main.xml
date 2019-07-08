@@ -8,13 +8,13 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/openDatePicker"
+        android:id="@+id/openDatePickerBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="OpenDatePicker"/>
 
     <Button
-        android:id="@+id/openTimePicker"
+        android:id="@+id/openTimePickerBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="OpenTimePicker"/>
