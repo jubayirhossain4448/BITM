@@ -12,7 +12,7 @@ public class StartUp {
 //        Developer developer = new AndroidDev();
 //        System.out.println("Developer Salary : " + developer.getSalary());
         
-        Developer developer = new AndroidDev();
+        Developer developer = new AndroidDev(); // Reference of AndroidDev 
         AndroidDev ad =(AndroidDev)developer;
     }
     
