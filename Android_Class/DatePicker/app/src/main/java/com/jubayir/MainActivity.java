@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.TargetApi;
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.icu.text.SimpleDateFormat;
 import android.os.Build;
@@ -35,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
                 openDatePicker();
 
+                openTime();
+
             }
         });
 
@@ -44,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void openTime() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
     }
 
     private void openDatePicker() {
@@ -74,4 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }
