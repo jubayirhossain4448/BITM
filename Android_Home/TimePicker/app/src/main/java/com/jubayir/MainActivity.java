@@ -1,5 +1,6 @@
 package com.jubayir;
 
+import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -8,14 +9,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.sql.Time;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     private Button openDatePickerBtn, openTimePickerBtn;
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss"); // One For Date Picker
 
 
     @Override
@@ -70,5 +76,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openDatePicker() {
+        DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() { // Two For Date Picker
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int day) {
+
+                month = month + 1; // Three For Date Picker
+
+                String pickDate = year + "/" + month + "/" + day + "00:00:00"; // Four For Date Picker
+
+                Date date = null; // Five For Date Picker
+
+                try {
+                    date = dateFormat.parse(pickDate); // Six For Date Picker
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+
+                openDatePickerBtn.setText(dateFormat.format(date)); // Seven For Date Picker
+            }
+        };
+
+        Calendar calendar = Calendar.getInstance(); // Eight For Date Picker
+        // Nine
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, dateSetListener, year, month, day);
+        datePickerDialog.show();
     }
 }
