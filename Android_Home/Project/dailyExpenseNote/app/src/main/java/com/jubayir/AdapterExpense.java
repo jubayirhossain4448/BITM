@@ -39,7 +39,7 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
         final Expense currentExpense = expenseList.get(i);
         viewHolder.expenseType.setText(currentExpense.getType());
         viewHolder.date.setText(currentExpense.getDate());
@@ -118,6 +118,7 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
                         return false;
                     }
                 });
+
                 menu.show();       //finally need to call show function for display popup menu
             }
         });
