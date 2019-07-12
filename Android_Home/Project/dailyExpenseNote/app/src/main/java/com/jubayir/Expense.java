@@ -7,7 +7,7 @@ public class Expense {
     private String type, date, time;
     private Bitmap imageDocument;
 
-    public Expense(int amount, int id, String type, String date, String time, Bitmap imageDocument) {
+    public Expense(int amount, String id, String type, String date, int time, Bitmap imageDocument) {
         this.amount = amount;
         this.id = id;
         this.type = type;

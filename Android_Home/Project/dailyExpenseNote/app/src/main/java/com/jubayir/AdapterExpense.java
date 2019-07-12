@@ -34,16 +34,16 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_expense_layout,viewGroup,false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_expense_layout, viewGroup, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        final Expense currentExpense=expenseList.get(i);
+        final Expense currentExpense = expenseList.get(i);
         viewHolder.expenseType.setText(currentExpense.getType());
         viewHolder.date.setText(currentExpense.getDate());
-        viewHolder.amount.setText(""+currentExpense.getAmount());
+        viewHolder.amount.setText("" + currentExpense.getAmount());
 
         //each item click listner  and sho bottomsheet
 
@@ -59,11 +59,11 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
                 // sheetDialog.setContentView(detailssheet);
                 //sheetDialog.show();
 
-                DetailExpenseSheet detailExpenseSheet=new DetailExpenseSheet(currentExpense.getDate(),currentExpense.getType(),currentExpense.getTime(),currentExpense.getAmount());
-                detailExpenseSheet.show(((FragmentActivity)context).getSupportFragmentManager(),"Expense Details");
+                DetailExpenseSheet detailExpenseSheet = new DetailExpenseSheet(currentExpense.getDate(), currentExpense.getType(), currentExpense.getTime(), currentExpense.getAmount());
+                detailExpenseSheet.show(((FragmentActivity) context).getSupportFragmentManager(), "Expense Details");
 
             }
-        } );
+        });
 
 
         //popup Button for edit and update data
@@ -71,25 +71,25 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
             @Override
             public void onClick(View v) {
 
-                PopupMenu menu=new PopupMenu(context,v);  //set popup menu custom process
-                menu.getMenuInflater().inflate(R.menu.menu_setting,menu.getMenu());
+                PopupMenu menu = new PopupMenu(context, v);  //set popup menu custom process
+                menu.getMenuInflater().inflate(R.menu.menu_setting, menu.getMenu());
                 menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        switch (item.getItemId()){
+                        switch (item.getItemId()) {
                             case R.id.deleteItem:
                                 //delete confirmation
-                                AlertDialog.Builder builder=new AlertDialog.Builder(context);
+                                AlertDialog.Builder builder = new AlertDialog.Builder(context);
                                 builder.setTitle("Are you sure to delete ?");
                                 builder.setCancelable(false);
                                 builder.setIcon(R.drawable.ic_delete_forever_black_24dp);
 
                                 //when click yes
-                                builder.setPositiveButton("Yes",new DialogInterface.OnClickListener(){
+                                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        helper=new DatabaseHelper(context);
+                                        helper = new DatabaseHelper(context);
                                         helper.deleteData(currentExpense.getId());
                                         expenseList.remove(i);
                                         notifyDataSetChanged();
@@ -98,7 +98,7 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
                                 });
 
                                 //when click no
-                                builder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+                                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         dialog.cancel();
@@ -124,11 +124,11 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
     }
 
     private void requestUpdate(Expense currentExpense) {
-        Intent intent=new Intent(context,UpdatExpense.class);
-        intent.putExtra("type",currentExpense.getType());
-        intent.putExtra("id",String.valueOf(currentExpense.getId()));    //since id is integer value
-        intent.putExtra("date",currentExpense.getDate());
-        intent.putExtra("time",currentExpense.getTime());
+        Intent intent = new Intent(context, UpdateExpense.class);
+        intent.putExtra("type", currentExpense.getType());
+        intent.putExtra("id", String.valueOf(currentExpense.getId()));    //since id is integer value
+        intent.putExtra("date", currentExpense.getDate());
+        intent.putExtra("time", currentExpense.getTime());
         intent.putExtra("amount", String.valueOf(currentExpense.getAmount()));
         context.startActivity(intent);
 
@@ -140,15 +140,15 @@ public class AdapterExpense extends RecyclerView.Adapter<AdapterExpense.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView expenseType,amount,date;
+        private TextView expenseType, amount, date;
         ImageView popupBtn;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            expenseType=itemView.findViewById(R.id.expensTypeTV);
-            date=itemView.findViewById(R.id.expensDateTV);
-            amount=itemView.findViewById(R.id.expenseAmountTV);
-            popupBtn=itemView.findViewById(R.id.popupMenuBtn);
+            expenseType = itemView.findViewById(R.id.expensTypeTV);
+            date = itemView.findViewById(R.id.expensDateTV);
+            amount = itemView.findViewById(R.id.expenseAmountTV);
+            popupBtn = itemView.findViewById(R.id.popupMenuBtn);
         }
     }
 }
