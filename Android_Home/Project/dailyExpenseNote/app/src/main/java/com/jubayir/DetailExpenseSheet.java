@@ -1,18 +1,16 @@
 package com.jubayir;
 
 import android.annotation.SuppressLint;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetDialogFragment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-@SuppressLint("ValidFragment")
-class DetailExpenseSheet extends BottomSheetDialogFragment {
+public class DetailExpenseSheet extends BottomSheetDialogFragment {
     private TextView date,amount,type,time;
     private String getDate,getType,getTime;
     private int getAmount;
