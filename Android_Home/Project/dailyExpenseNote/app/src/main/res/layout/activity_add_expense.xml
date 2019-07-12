@@ -63,4 +63,36 @@
 
     </FrameLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_description_black_24dp"/>
+
+        <Button
+            android:id="@+id/addDocumentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Amount"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addExpenseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"/>
+
 </LinearLayout>
