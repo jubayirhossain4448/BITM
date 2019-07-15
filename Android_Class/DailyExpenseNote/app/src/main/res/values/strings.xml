@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Daily Expense Note</string>
+    <string name="add_name">Add New Expense</string>
 </resources>
