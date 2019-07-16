@@ -41,5 +41,186 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expense Date"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17 July 2019"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From Date"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15 July 2019"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width=".5dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Expense Time"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6:45 pm"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:textSize="14sp"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_photo_camera_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:text="Add Receipt (Optional)"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hossain"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_x_button"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
 
 </LinearLayout>
