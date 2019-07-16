@@ -65,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="15 July 2019"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:textAlignment="center"
                     android:textColor="#000000"/>
 
@@ -103,9 +103,11 @@
         </LinearLayout>
 
         <View
-            android:layout_width=".5dp"
+            android:layout_width="match_parent"
             android:background="@android:color/darker_gray"
-            android:layout_height="match_parent"/>
+            android:layout_height=".5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,8 +117,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="To Date"
+                android:text="Expense Type"
                 android:textSize="14sp"
+                android:textAlignment="center"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electricity Bill"
+                android:textSize="12sp"
                 android:textAlignment="center"
                 android:textColor="#000000"/>
 
@@ -128,6 +138,8 @@
 
 
 </androidx.cardview.widget.CardView>
+
+
 
 
 
