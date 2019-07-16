@@ -201,6 +201,15 @@
                 android:layout_below="@id/recyclearV"
                 android:orientation="vertical">
 
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
+                <include layout="@layout/model_expense_list"/>
             </LinearLayout>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
