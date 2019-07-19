@@ -30,11 +30,12 @@ public class VerifyActivity extends AppCompatActivity {
     private void sendOTP() {
 
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                "+88" +phoneNo,        // Phone number to verify
+               "+88" + phoneNo,        // Phone number to verify
                 60,                 // Timeout duration
                 TimeUnit.SECONDS,   // Unit of timeout
                 this,               // Activity (for callback binding)
                 mCallbacks);        // OnVerificationStateChangedCallbacksPhoneAuthActivity.java
     }
 
+    PhoneAuthProvider.OnVerificationStateChangedCallbacks callbacks =
 }
