@@ -77,6 +77,7 @@ public class VerifyActivity extends AppCompatActivity {
         public void onVerificationFailed(FirebaseException e) {
             Toast.makeText(VerifyActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
+
         }
 
         @Override
