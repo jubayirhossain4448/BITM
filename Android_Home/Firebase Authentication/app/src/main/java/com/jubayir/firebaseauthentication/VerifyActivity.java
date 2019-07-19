@@ -101,4 +101,13 @@ public class VerifyActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void createAccountWithEmailandPassword(String email, String password){
+        firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+
+            }
+        });
+    }
 }
