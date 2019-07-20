@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Firebase With Email and Password</string>
+    <string name="sign_up_name"><u>SignUp</u></string>
 </resources>

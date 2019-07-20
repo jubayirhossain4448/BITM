@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SigniIn">
+    tools:context=".SigninActivity">
 
     <EditText
         android:id="@+id/emailEt"
@@ -33,8 +33,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
-        
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do not have an account?"/>
+
+        <TextView
+            android:id="@+id/signUpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_name"/>
 
     </LinearLayout>
 </LinearLayout>
