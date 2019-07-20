@@ -12,7 +12,7 @@
         android:id="@+id/verificationEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your Phone Number"
+        android:hint="Enter Verification Code"
         android:textStyle="bold"
         android:textSize="20dp"
         android:layout_marginTop="25dp"/>
