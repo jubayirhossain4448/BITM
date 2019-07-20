@@ -5,67 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignInActivity">
+    tools:context=".SignUpActivity">
 
     <EditText
-        android:id="@+id/nameET"
+        android:id="@+id/mailSET"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Your Name"
-        android:textSize="15sp"
-        android:layout_margin="10dp"/>
+        android:hint="Enter your mail"
+        android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/mailET"
+        android:id="@+id/passSET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Your E-mail"
-        android:textSize="15sp"
-        android:layout_margin="10dp"/>
-
-    <EditText
-        android:id="@+id/passwordET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Your Password"
-        android:textSize="15sp"
-        android:layout_margin="10dp"/>
-
-    <EditText
-        android:id="@+id/confirmPassEt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Confirm Your Password"
-        android:textSize="15sp"
-        android:layout_margin="10dp"/>
+        android:hint="Enter your Password"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/signUpBtn"
+        android:id="@+id/signInSBtn"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SignUp"
-        android:layout_margin="10dp"
+        android:text="@string/app_signid"
         android:layout_gravity="right"
-        android:background="@android:color/holo_purple"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:background="@android:color/system_notification_accent_color"
+        android:textSize="15sp"/>
 
     <TextView
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Already have?"
+        android:text="Do not have account?"
         android:textSize="15sp"/>
 
     <Button
-        android:id="@+id/signInBtn"
+        android:id="@+id/signUpSBtn"
+        android:background="@android:color/holo_red_dark"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SignIn"
-        android:textSize="15sp"
-        android:background="@color/colorPrimaryDark"
-        android:layout_margin="10dp"
+        android:text="@string/app_signup"
         android:layout_gravity="right"
-        android:textStyle="bold"/>
+        android:textSize="15sp"/>
 
 </LinearLayout>
