@@ -97,8 +97,10 @@ public class VerifyActivity extends AppCompatActivity {
         firebaseAuth.signInWithCredential(credential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                Intent intent = new Intent(VerifyActivity.this, MainActivity.class);
-                startActivity(intent);
+                if (task.isSuccessful()) {
+                    Intent intent = new Intent(VerifyActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
     }
