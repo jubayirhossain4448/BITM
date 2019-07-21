@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "1057322421515",
+    "firebase_url": "https://map-94081.firebaseio.com",
+    "project_id": "map-94081",
+    "storage_bucket": "map-94081.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057322421515:android:002890185f0ed946",
+        "android_client_info": {
+          "package_name": "com.jubayir.firebaseauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057322421515-1a1tka6g0hmp4eu1gjkj1urjg84rtuqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jubayir.firebaseauth",
+            "certificate_hash": "eb9b164df72385ab0fa317373bdfe7196a2a9166"
+          }
+        },
+        {
+          "client_id": "1057322421515-8jcfjcl786eqkpin44mhtb8rdvd9dkbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2Sn7E7gSiyOpuY5AqWkN6q5NQrPp8zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057322421515-8jcfjcl786eqkpin44mhtb8rdvd9dkbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057322421515:android:e08232b3d3d1923e",
+        "android_client_info": {
+          "package_name": "com.jubayir.firebasewithemailandpassword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057322421515-ggrfbbtnldlm2q6esf4mdvjc4hvf5n77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jubayir.firebasewithemailandpassword",
+            "certificate_hash": "e2df12d9319eebcab0fcc5e4a9678c00856737f3"
+          }
+        },
+        {
+          "client_id": "1057322421515-8jcfjcl786eqkpin44mhtb8rdvd9dkbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2Sn7E7gSiyOpuY5AqWkN6q5NQrPp8zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057322421515-8jcfjcl786eqkpin44mhtb8rdvd9dkbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057322421515:android:a0789c316c54fad6",
+        "android_client_info": {
+          "package_name": "com.jubayir.googlemapex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057322421515-8jcfjcl786eqkpin44mhtb8rdvd9dkbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2Sn7E7gSiyOpuY5AqWkN6q5NQrPp8zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057322421515-8jcfjcl786eqkpin44mhtb8rdvd9dkbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
