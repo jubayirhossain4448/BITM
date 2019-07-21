@@ -31,6 +31,20 @@ public class SignUpActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        binding.signUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = binding.nameET.getText().toString().trim();
+                String email = binding.emailET.getText().toString().trim();
+                String password = binding.passwordET.getText().toString().trim();
+                String cPassword = binding.confirmPasswordET.getText().toString().trim();
+
+                if (password.equals(cPassword)){
+                    
+                }
+            }
+        });
     }
 
     private void init() {
