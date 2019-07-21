@@ -26,6 +26,11 @@
         android:inputType="textPassword"
         android:hint="Enter your Password"/>
 
-    
+    <EditText
+        android:id="@+id/confirmPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Enter your confirm Password"/>
 
 </LinearLayout>
