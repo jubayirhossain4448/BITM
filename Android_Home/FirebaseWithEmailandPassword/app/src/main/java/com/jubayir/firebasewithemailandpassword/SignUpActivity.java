@@ -3,6 +3,7 @@ package com.jubayir.firebasewithemailandpassword;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -68,6 +69,19 @@ public class SignUpActivity extends AppCompatActivity {
                DatabaseReference userRef = databaseReference.child("users").child(userId);
 
                     HashMap<String, Object> userMap = new HashMap<>();
+                    userMap.put("name", name);
+                    userMap.put("email", email);
+
+                    userRef.setValue(userMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                startActivity(new Intent(SignUpActivity.this, MainActivity.class));
+                            }
+                        }
+                    });
+                }else {
+                    Toast.makeText(SignUpActivity.this, "Something is Wrong", Toast.LENGTH_SHORT).show();
                 }
             }
         });
