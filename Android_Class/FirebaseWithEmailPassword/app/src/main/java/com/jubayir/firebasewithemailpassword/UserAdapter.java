@@ -12,6 +12,7 @@ import android.widget.Toolbar;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
@@ -21,6 +22,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public UserAdapter(List<User> userList, Context context) {
         this.userList = userList;
         this.context = context;
+    }
+
+    public UserAdapter(ArrayList<User> userArrayList) {
+
     }
 
     @NonNull
