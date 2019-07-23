@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private UserAdapter adapter;
     private List<User> users;
-    private EditText nameET, ageET, emailET, bloodGroupET;
+    private EditText nameET, emailET, ageET, bloodGroupET;
     private Button addBtn;
-    private String name, age, email, bloodGroup;
+    private String name, email, age, bloodGroup;
     
     private DatabaseReference databaseReference;
 
@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = nameET.getText().toString();
-                String age = ageET.getText().toString();
                 String email = emailET.getText().toString();
+                String age = ageET.getText().toString();
                 String bloodGroup = bloodGroupET.getText().toString();
 
-                addValueToDB(name, age, email, bloodGroup);
+                addValueToDB(name, email, age, bloodGroup);
             }
         });
         
@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         nameET = findViewById(R.id.nameET);
-        ageET = findViewById(R.id.ageET);
         emailET = findViewById(R.id.emailET);
+        ageET = findViewById(R.id.ageET);
         bloodGroupET = findViewById(R.id.bloodGroupET);
         addBtn = findViewById(R.id.addBtn);
 

@@ -11,4 +11,13 @@ Step by step:
     (v) OnCreateViewHolder to access layout.
     (vi) ViewHolder take field reference.
     (vii) findViewById.
-    (vii) onBindViewHolder 
+    (vii) onBindViewHolder.
+6. Go to MainActivity
+  i. first take all fields
+  ii. take init() method
+  iii. initialize fields into this method
+  iv. addBtn.setOnclickListner 
+  v. void OnClickListner e fields need to get
+  vi. addValueToDB() take databaseReference
+  vii. getUser()
+  viii. 
