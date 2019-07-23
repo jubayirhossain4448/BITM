@@ -13,8 +13,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +50,30 @@ public class MainActivity extends AppCompatActivity {
                 String bloodGroup = bloodGroupET.getText().toString();
 
                 addValueToDB(name, age, email, bloodGroup);
+            }
+        });
+        
+        getUsers();
+    }
+
+    private void getUsers() {
+        DatabaseReference userRef = databaseReference.child("users");
+        userRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+              if (dataSnapshot.exists()){
+                  users.clear();
+                  for (DataSnapshot data : dataSnapshot.getChildren()){
+                      User user = data.getValue(User.class);
+                      users.add(user);
+                      adapter.notifyDataSetChanged();
+                  }
+              }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
     }
