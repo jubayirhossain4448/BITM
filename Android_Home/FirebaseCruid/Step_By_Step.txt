@@ -1,0 +1,14 @@
+Step by step:
+1. First Take a Project.
+2. Design 'activity_main' layout.
+3. Take an 'item_user.xml' layout resource file for design of recyclearView.
+4. Take a Java 'User' pojo class.
+5. "UserAdapter" java class.
+    (i) "extends RecyclearView.Adapter<UserAdapter.ViewHolder>" class.
+    (ii) Take User List in global. 
+    (iii) A constructor.
+    (iv)  getItemCount.
+    (v) OnCreateViewHolder to access layout.
+    (vi) ViewHolder take field reference.
+    (vii) findViewById.
+    (vii) onBindViewHolder 
