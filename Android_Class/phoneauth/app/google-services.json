@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "596188789599",
+    "firebase_url": "https://practics-5a31a.firebaseio.com",
+    "project_id": "practics-5a31a",
+    "storage_bucket": "practics-5a31a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596188789599:android:3073b939aa967d48",
+        "android_client_info": {
+          "package_name": "com.jonyszone.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596188789599-an0cs7eo1g1494pdigldbcmbhs18hr8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHjZoR0syNc0o9764DfXkIKjo_b8pv64g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596188789599-an0cs7eo1g1494pdigldbcmbhs18hr8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596188789599:android:bb7b6284ea5bf0ac",
+        "android_client_info": {
+          "package_name": "com.jubayir.phoneauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596188789599-t2a6faj96gb082scisfcb4rtsr71keed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jubayir.phoneauth",
+            "certificate_hash": "eb9b164df72385ab0fa317373bdfe7196a2a9166"
+          }
+        },
+        {
+          "client_id": "596188789599-an0cs7eo1g1494pdigldbcmbhs18hr8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHjZoR0syNc0o9764DfXkIKjo_b8pv64g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596188789599-an0cs7eo1g1494pdigldbcmbhs18hr8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

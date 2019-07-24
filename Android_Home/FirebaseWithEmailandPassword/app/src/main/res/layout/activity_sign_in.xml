@@ -6,12 +6,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_margin="10dp"
         tools:context=".SigninActivity">
 
         <EditText
             android:id="@+id/emailEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:inputType="textEmailAddress"
             android:hint="Enter your Email"/>
 
@@ -19,6 +21,7 @@
             android:id="@+id/passwordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:inputType="textPassword"
             android:hint="Enter your Password"/>
 
@@ -27,12 +30,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign In"
+            android:layout_margin="10dp"
             android:textAllCaps="false"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_margin="10dp"
             android:gravity="center">
 
             <TextView
