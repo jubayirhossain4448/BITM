@@ -11,11 +11,19 @@
         android:id="@+id/selectBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="selectImage"
         android:text="Select Image"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="fitXY"/>
+
+    <Button
+        android:id="@+id/uploadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="uploadImage"
+        android:text="Upload"/>
 
 </LinearLayout>
