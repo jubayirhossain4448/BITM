@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tittleTvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tittle"
+        android:textSize="25sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/codeTvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        android:textSize="25sp"
+        android:layout_below="@+id/tittleTvId"
+        />
+
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/creditTvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
