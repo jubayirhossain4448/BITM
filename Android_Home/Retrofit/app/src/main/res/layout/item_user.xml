@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/userIdTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UserId : "
+        android:textSize="16sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/idTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID : "
+        android:textSize="16sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title : "
+        android:textSize="16sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/bodyTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Body : "
+        android:textSize="16sp"
+        android:layout_margin="10dp"/>
+
 
 </LinearLayout>
