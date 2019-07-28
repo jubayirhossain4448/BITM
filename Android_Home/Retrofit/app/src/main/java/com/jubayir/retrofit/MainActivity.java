@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
                 users = response.body();
-                adapter.notifyDataSetChanged();
+                adapter = new UserAdapter(users);
+                recyclerView.setAdapter(adapter);
+
             }
 
             @Override
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         users = new ArrayList<>();
         adapter = new UserAdapter(users);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
+
+
     }
 }
