@@ -28,10 +28,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull UserAdapter.ViewHolder holder, int position) {
         User user = users.get(position);
-        holder.userId.setText(user.getUserId());
-        holder.id.setText(user.getId());
-        holder.title.setText(user.getTitle());
-        holder.body.setText(user.getBody());
+        holder.userId.setText("UserId : " +String.valueOf(user.getUserId()));
+        holder.id.setText("Id : " +String.valueOf(user.getId()));
+        holder.title.setText("Title " +user.getTitle());
+        holder.body.setText("Body" + user.getBody());
 
 
     }
