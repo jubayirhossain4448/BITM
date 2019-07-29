@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/insertBtn"
+        android:text="insert"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewId"
