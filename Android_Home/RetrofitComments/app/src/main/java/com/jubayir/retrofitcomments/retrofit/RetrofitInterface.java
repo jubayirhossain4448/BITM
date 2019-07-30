@@ -1,5 +1,7 @@
 package com.jubayir.retrofitcomments.retrofit;
 
+import com.jubayir.retrofitcomments.User;
+
 import java.util.List;
 
 import retrofit2.Call;
