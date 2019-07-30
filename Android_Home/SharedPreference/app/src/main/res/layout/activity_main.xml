@@ -27,4 +27,11 @@
         android:text="Login"
         android:onClick="login"/>
 
+    <Button
+        android:id="@+id/welcomenBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Activity"
+        android:onClick="welcome"/>
+
 </LinearLayout>
