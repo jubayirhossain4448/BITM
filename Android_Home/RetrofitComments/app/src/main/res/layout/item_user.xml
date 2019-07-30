@@ -32,10 +32,10 @@
         android:textColor="@android:color/holo_purple"/>
 
     <TextView
-        android:id="@+id/titleTV"
+        android:id="@+id/emailTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Titile : "
+        android:text="E-mail : "
         android:textSize="20sp"
         android:layout_margin="10dp"
         android:textColor="@android:color/holo_purple"/>

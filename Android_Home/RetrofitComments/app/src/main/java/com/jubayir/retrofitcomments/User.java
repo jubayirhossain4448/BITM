@@ -4,17 +4,17 @@ public class User {
     private int postId;
     private int id;
     private String name;
-    private String title;
+    private String email;
     private String body;
 
     public User() {
     }
 
-    public User(int postId, int id, String name, String title, String body) {
+    public User(int postId, int id, String name, String email, String body) {
         this.postId = postId;
         this.id = id;
         this.name = name;
-        this.title = title;
+        this.email = email;
         this.body = body;
     }
 
@@ -30,8 +30,8 @@ public class User {
         return name;
     }
 
-    public String getTitle() {
-        return title;
+    public String getEmail() {
+        return email;
     }
 
     public String getBody() {
