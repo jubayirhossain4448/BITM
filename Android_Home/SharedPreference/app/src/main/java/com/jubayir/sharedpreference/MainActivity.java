@@ -26,12 +26,15 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
         name = nameET.getText().toString();
         email = emailET.getText().toString();
+        if (name.isEmpty() && email.isEmpty()){
 
         preferences = getSharedPreferences("login", MODE_PRIVATE);
         editor = preferences.edit();
         editor.putString("name", name);
         editor.putString("email", email);
         editor.apply();
+
+        }
 
         startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
 
