@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tour Mate</string>
+    <string name="signup_name"><u>Sign_up</u></string>
 </resources>
