@@ -27,18 +27,21 @@
 
 
     <EditText
+        android:id="@+id/emailET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter email"
         android:layout_margin="10dp"/>
 
     <EditText
+        android:id="@+id/passET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:layout_margin="10dp"/>
 
     <EditText
+        android:id="@+id/nameET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Name"
