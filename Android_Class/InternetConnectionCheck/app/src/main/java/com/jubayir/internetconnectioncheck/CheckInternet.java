@@ -1,4 +1,12 @@
 package com.jubayir.internetconnectioncheck;
 
-public class CheckInternet {
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+
+public class CheckInternet extends BroadcastReceiver {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        
+    }
 }
