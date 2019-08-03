@@ -8,7 +8,7 @@ import android.os.Bundle;
 import static android.content.Intent.ACTION_AIRPLANE_MODE_CHANGED;
 
 public class MainActivity extends AppCompatActivity {
-    private CheckAirplaneMode checkAirplaneMode;
+    private CheckAirplaneMode checkAirplaneMode = new CheckAirplaneMode();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
