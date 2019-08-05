@@ -11,15 +11,15 @@ public class CheckInternet extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         ConnectivityManager cm =
-                (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+                (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
         NetworkInfo activeNetwork = (NetworkInfo) cm.getActiveNetworkInfo();
         boolean isConnected = activeNetwork != null &&
                 activeNetwork.isConnectedOrConnecting();
 
-        if (isConnected){
+        if (isConnected) {
             Toast.makeText(context, "Internet is connected", Toast.LENGTH_SHORT).show();
-        }else {
+        } else {
             Toast.makeText(context, "Internet is not Connected", Toast.LENGTH_SHORT).show();
         }
     }
