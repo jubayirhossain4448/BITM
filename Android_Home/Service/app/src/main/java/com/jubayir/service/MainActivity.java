@@ -15,4 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void startService(View view) {
     }
+
+    public void stopService(View view) {
+    }
 }
